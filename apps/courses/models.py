@@ -49,7 +49,7 @@ class Video(models.Model):
 
 # 课程资源表（课程表 一对多 课程资源表）
 class CourseResource(models.Model):
-    course = models.ForeignKey(Course, verbose_name=u'章节')
+    course = models.ForeignKey(Course, verbose_name=u'课程')
     name = models.CharField(max_length=100, verbose_name=u'名称')
     download = models.FileField(upload_to='course/resource/%Y/%m', verbose_name=u'资源文件', max_length=100)
     add_time = models.DateTimeField(default=datetime.now, verbose_name=u'添加时间')
