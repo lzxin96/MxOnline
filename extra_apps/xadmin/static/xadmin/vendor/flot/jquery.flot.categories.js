@@ -3,7 +3,7 @@
 Copyright (c) 2007-2013 IOLA and Ole Laursen.
 Licensed under the MIT license.
 
-Consider a dataset like [["February", 34], ["March", 20], ...]. This plugin
+Consider a dataset like [["February", 34], ["March", 20], /static.]. This plugin
 allows you to plot such a dataset directly.
 
 To enable it, you must specify mode: "categories" on the axis with the textual

@@ -36,7 +36,7 @@
             return "Unesite " + n + " znakova manje";
         },
         formatSelectionTooBig: function (limit) { return "Maksimalan broj odabranih stavki je " + limit; },
-        formatLoadMore: function (pageNumber) { return "Učitavanje rezultata..."; },
-        formatSearching: function () { return "Pretraga..."; }
+        formatLoadMore: function (pageNumber) { return "Učitavanje rezultata/static."; },
+        formatSearching: function () { return "Pretraga/static."; }
     });
 })(jQuery);

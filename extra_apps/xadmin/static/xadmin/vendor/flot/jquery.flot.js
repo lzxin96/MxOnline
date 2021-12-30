@@ -429,9 +429,9 @@ Licensed under the MIT license.
 
     function Plot(placeholder, data_, options_, plugins) {
         // data is on the form:
-        //   [ series1, series2 ... ]
-        // where series is either just the data as [ [x1, y1], [x2, y2], ... ]
-        // or { data: [ [x1, y1], [x2, y2], ... ], label: "some label", ... }
+        //   [ series1, series2 /static. ]
+        // where series is either just the data as [ [x1, y1], [x2, y2], /static. ]
+        // or { data: [ [x1, y1], [x2, y2], /static. ], label: "some label", /static. }
 
         var series = [],
             options = {
@@ -1071,7 +1071,7 @@ Licensed under the MIT license.
                     else {
                         // a little bit of line specific stuff that
                         // perhaps shouldn't be here, but lacking
-                        // better means...
+                        // better means/static.
                         if (insertSteps && k > 0
                             && points[k - ps] != null
                             && points[k - ps] != points[k]
@@ -1663,7 +1663,7 @@ Licensed under the MIT license.
                         // only proceed if the tick interval rounded
                         // with an extra decimal doesn't give us a
                         // zero at end
-                        if (!(ts.length > 1 && /\..*0$/.test((ts[1] - ts[0]).toFixed(extraDec))))
+                        if (!(ts.length > 1 && /\/static*0$/.test((ts[1] - ts[0]).toFixed(extraDec))))
                             axis.tickDecimals = extraDec;
                     }
                 }

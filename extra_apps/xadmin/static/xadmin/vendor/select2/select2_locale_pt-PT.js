@@ -9,7 +9,7 @@
         formatInputTooShort: function (input, min) { var n = min - input.length; return "Introduza " + n + " caracter" + (n == 1 ? "" : "es"); },
         formatInputTooLong: function (input, max) { var n = input.length - max; return "Apague " + n + " caracter" + (n == 1 ? "" : "es"); },
         formatSelectionTooBig: function (limit) { return "Só é possível selecionar " + limit + " elemento" + (limit == 1 ? "" : "s"); },
-        formatLoadMore: function (pageNumber) { return "A carregar mais resultados..."; },
-        formatSearching: function () { return "A pesquisar..."; }
+        formatLoadMore: function (pageNumber) { return "A carregar mais resultados/static."; },
+        formatSearching: function () { return "A pesquisar/static."; }
     });
 })(jQuery);

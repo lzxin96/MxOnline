@@ -3,7 +3,7 @@
 Copyright (c) 2007-2013 IOLA and Ole Laursen.
 Licensed under the MIT license.
 
-The data syntax is [ [ image, x1, y1, x2, y2 ], ... ] where (x1, y1) and
+The data syntax is [ [ image, x1, y1, x2, y2 ], /static. ] where (x1, y1) and
 (x2, y2) are where you intend the two opposite corners of the image to end up
 in the plot. Image must be a fully loaded Javascript image (you can make one
 with new Image()). If the image is not complete, it's skipped when plotting.
@@ -36,8 +36,8 @@ The plugin supports these options:
 They can be specified for a specific series:
 
 	$.plot( $("#placeholder"), [{
-		data: [ ... ],
-		images: { ... }
+		data: [ /static. ],
+		images: { /static. }
 	])
 
 Note that because the data format is different from usual data points, you

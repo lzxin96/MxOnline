@@ -1045,8 +1045,8 @@ msgstr "Mostrar Tudo"
 #: templates/xadmin/includes/submit_line.html:10
 #: templates/xadmin/includes/submit_line.html:13
 #: templates/xadmin/views/form.html:30 templates/xadmin/views/form.html:31
-msgid "Saving.."
-msgstr "Salvando..."
+msgid "Saving/static"
+msgstr "Salvando/static."
 
 #: templates/xadmin/includes/submit_line.html:17
 msgid "Save as new"

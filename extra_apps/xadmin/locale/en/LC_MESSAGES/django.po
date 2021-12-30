@@ -1002,7 +1002,7 @@ msgstr ""
 #: templates/xadmin/includes/submit_line.html:10
 #: templates/xadmin/includes/submit_line.html:13
 #: templates/xadmin/views/form.html:30 templates/xadmin/views/form.html:31
-msgid "Saving.."
+msgid "Saving/static"
 msgstr ""
 
 #: templates/xadmin/includes/submit_line.html:17

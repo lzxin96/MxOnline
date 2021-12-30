@@ -368,7 +368,7 @@ class RelatedFieldSearchFilter(FieldFilter):
     def label_for_value(self, other_model, rel_name, value):
         try:
             obj = other_model._default_manager.get(**{rel_name: value})
-            return '%s' % escape(Truncator(obj).words(14, truncate='...'))
+            return '%s' % escape(Truncator(obj).words(14, truncate='/static.'))
         except (ValueError, other_model.DoesNotExist):
             return ""
 

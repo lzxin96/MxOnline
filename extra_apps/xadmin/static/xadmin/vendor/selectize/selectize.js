@@ -512,7 +512,7 @@
 		 *   [{'name': 'a', options: {}}, {'name': 'b', options: {}}]
 		 *
 		 * Hash (with options):
-		 *   {'a': { ... }, 'b': { ... }, 'c': { ... }}
+		 *   {'a': { /static. }, 'b': { /static. }, 'c': { /static. }}
 		 *
 		 * @param {mixed} plugins
 		 */
@@ -685,7 +685,7 @@
 			if (event in this._events === false) return;
 			this._events[event].splice(this._events[event].indexOf(fct), 1);
 		},
-		trigger: function(event /* , args... */){
+		trigger: function(event /* , args/static. */){
 			this._events = this._events || {};
 			if (event in this._events === false) return;
 			for (var i = 0; i < this._events[event].length; i++){
@@ -3208,23 +3208,23 @@
 		copyClassesToDropdown: true,
 	
 		/*
-		load                 : null, // function(query, callback) { ... }
-		score                : null, // function(search) { ... }
-		onInitialize         : null, // function() { ... }
-		onChange             : null, // function(value) { ... }
-		onItemAdd            : null, // function(value, $item) { ... }
-		onItemRemove         : null, // function(value) { ... }
-		onClear              : null, // function() { ... }
-		onOptionAdd          : null, // function(value, data) { ... }
-		onOptionRemove       : null, // function(value) { ... }
-		onOptionClear        : null, // function() { ... }
-		onOptionGroupAdd     : null, // function(id, data) { ... }
-		onOptionGroupRemove  : null, // function(id) { ... }
-		onOptionGroupClear   : null, // function() { ... }
-		onDropdownOpen       : null, // function($dropdown) { ... }
-		onDropdownClose      : null, // function($dropdown) { ... }
-		onType               : null, // function(str) { ... }
-		onDelete             : null, // function(values) { ... }
+		load                 : null, // function(query, callback) { /static. }
+		score                : null, // function(search) { /static. }
+		onInitialize         : null, // function() { /static. }
+		onChange             : null, // function(value) { /static. }
+		onItemAdd            : null, // function(value, $item) { /static. }
+		onItemRemove         : null, // function(value) { /static. }
+		onClear              : null, // function() { /static. }
+		onOptionAdd          : null, // function(value, data) { /static. }
+		onOptionRemove       : null, // function(value) { /static. }
+		onOptionClear        : null, // function() { /static. }
+		onOptionGroupAdd     : null, // function(id, data) { /static. }
+		onOptionGroupRemove  : null, // function(id) { /static. }
+		onOptionGroupClear   : null, // function() { /static. }
+		onDropdownOpen       : null, // function($dropdown) { /static. }
+		onDropdownClose      : null, // function($dropdown) { /static. }
+		onType               : null, // function(str) { /static. }
+		onDelete             : null, // function(values) { /static. }
 		*/
 	
 		render: {

@@ -42,7 +42,7 @@
                 return "Môžete zvoliť najviac "+limit+" položiek";
             }
         },
-        formatLoadMore: function (pageNumber) { return "Načítavajú sa ďalšie výsledky..."; },
-        formatSearching: function () { return "Vyhľadávanie..."; }
+        formatLoadMore: function (pageNumber) { return "Načítavajú sa ďalšie výsledky/static."; },
+        formatSearching: function () { return "Vyhľadávanie/static."; }
     });
 })(jQuery);

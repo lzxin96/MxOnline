@@ -2,12 +2,12 @@
 # encoding=utf-8
 """
 Author:zcyuefan
-Topic:django-import-export plugin for xadmin to help importing and exporting data using .csv/.xls/.../.json files
+Topic:django-import-export plugin for xadmin to help importing and exporting data using .csv/.xls//static./.json files
 
 Use:
 +++ settings.py +++
 INSTALLED_APPS = (
-    ...
+    /static.
     'import_export',
 )
 

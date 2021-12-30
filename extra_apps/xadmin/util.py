@@ -416,9 +416,9 @@ def get_fields_from_path(model, path):
     """ Return list of Fields given path relative to model.
 
     e.g. (ModelX, "user__groups__name") -> [
-        <django.db.models.fields.related.ForeignKey object at 0x...>,
-        <django.db.models.fields.related.ManyToManyField object at 0x...>,
-        <django.db.models.fields.CharField object at 0x...>,
+        <django.db.models.fields.related.ForeignKey object at 0x/static.>,
+        <django.db.models.fields.related.ManyToManyField object at 0x/static.>,
+        <django.db.models.fields.CharField object at 0x/static.>,
     ]
     """
     pieces = path.split(LOOKUP_SEP)

@@ -55,7 +55,7 @@ will be disabled.
 
 Example API usage:
 
-	plot = $.plot(...);
+	plot = $.plot(/static.);
 
 	// zoom default amount in on the pixel ( 10, 20 )
 	plot.zoom({ center: { left: 10, top: 20 } });

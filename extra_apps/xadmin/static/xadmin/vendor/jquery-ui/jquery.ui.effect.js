@@ -206,7 +206,7 @@ function stringParse( string ) {
 			parsed = inst[ spaceName ]( values );
 
 			// if this was an rgba parse the assignment might happen twice
-			// oh well....
+			// oh well/static/static
 			inst[ spaces[ spaceName ].cache ] = parsed[ spaces[ spaceName ].cache ];
 			rgba = inst._rgba = parsed._rgba;
 
@@ -832,7 +832,7 @@ $.effects.animateClass = function( value, duration, easing, callback ) {
 			});
 
 			// this is guarnteed to be there if you use jQuery.speed()
-			// it also handles dequeuing the next anim...
+			// it also handles dequeuing the next anim/static.
 			o.complete.call( animated[ 0 ] );
 		});
 	});
@@ -914,7 +914,7 @@ $.extend( $.effects, {
 				// http://bugs.jquery.com/ticket/9917
 				// jQuery 1.6.2 incorrectly returns undefined for any falsy value.
 				// We can't differentiate between "" and 0 here, so we just assume
-				// empty string since it's likely to be a more common value...
+				// empty string since it's likely to be a more common value/static.
 				if ( val === undefined ) {
 					val = "";
 				}
@@ -1068,7 +1068,7 @@ function _normalizeArguments( effect, options, speed, callback ) {
 	// convert to an object
 	effect = { effect: effect };
 
-	// catch (effect, null, ...)
+	// catch (effect, null, /static.)
 	if ( options == null ) {
 		options = {};
 	}

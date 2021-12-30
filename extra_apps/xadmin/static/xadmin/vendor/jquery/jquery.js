@@ -137,7 +137,7 @@ jQuery.fn = jQuery.prototype = {
 							if ( jQuery.isFunction( this[ match ] ) ) {
 								this[ match ]( context[ match ] );
 
-							// ...and otherwise set as attributes
+							// /static.and otherwise set as attributes
 							} else {
 								this.attr( match, context[ match ] );
 							}
@@ -163,7 +163,7 @@ jQuery.fn = jQuery.prototype = {
 					return this;
 				}
 
-			// HANDLE: $(expr, $(...))
+			// HANDLE: $(expr, $(/static.))
 			} else if ( !context || context.jquery ) {
 				return ( context || rootjQuery ).find( selector );
 
@@ -765,7 +765,7 @@ jQuery.extend({
 					fn.call( elems, value );
 					fn = null;
 
-				// ...except when executing function values
+				// /static.except when executing function values
 				} else {
 					bulk = fn;
 					fn = function( elem, key, value ) {
@@ -1790,9 +1790,9 @@ Expr = Sizzle.selectors = {
 
 		"CHILD": function( match ) {
 			/* matches from matchExpr["CHILD"]
-				1 type (only|nth|...)
+				1 type (only|nth|/static.)
 				2 what (child|of-type)
-				3 argument (even|odd|\d*|\d*n([+-]\d+)?|...)
+				3 argument (even|odd|\d*|\d*n([+-]\d+)?|/static.)
 				4 xn-component of xn+y argument ([+-]?\d*n|)
 				5 sign of xn-component
 				6 x of xn-component
@@ -1932,7 +1932,7 @@ Expr = Sizzle.selectors = {
 
 						start = [ forward ? parent.firstChild : parent.lastChild ];
 
-						// non-xml :nth-child(...) stores cache data on `parent`
+						// non-xml :nth-child(/static.) stores cache data on `parent`
 						if ( forward && useCache ) {
 							// Seek `elem` from a previously-cached index
 							outerCache = parent[ expando ] || (parent[ expando ] = {});
@@ -1957,7 +1957,7 @@ Expr = Sizzle.selectors = {
 						} else if ( useCache && (cache = (elem[ expando ] || (elem[ expando ] = {}))[ type ]) && cache[0] === dirruns ) {
 							diff = cache[1];
 
-						// xml :nth-child(...) or :nth-last-child(...) or :nth(-last)?-of-type(...)
+						// xml :nth-child(/static.) or :nth-last-child(/static.) or :nth(-last)?-of-type(/static.)
 						} else {
 							// Use the same loop as above to seek `elem` from the start
 							while ( (node = ++nodeIndex && node && node[ dir ] ||
@@ -2415,10 +2415,10 @@ function setMatcher( preFilter, selector, matcher, postFilter, postFinder, postS
 				// If we have a postFinder, or filtered seed, or non-seed postFilter or preexisting results,
 				postFinder || ( seed ? preFilter : preexisting || postFilter ) ?
 
-					// ...intermediate processing is necessary
+					// /static.intermediate processing is necessary
 					[] :
 
-					// ...otherwise use results directly
+					// /static.otherwise use results directly
 					results :
 				matcherIn;
 
@@ -3080,7 +3080,7 @@ jQuery.extend({
 	},
 
 	// Deferred helper
-	when: function( subordinate /* , ..., subordinateN */ ) {
+	when: function( subordinate /* , /static., subordinateN */ ) {
 		var i = 0,
 			resolveValues = core_slice.call( arguments ),
 			length = resolveValues.length,
@@ -3401,7 +3401,7 @@ Data.prototype = {
 		} else {
 			// Support array or space separated string of keys
 			if ( jQuery.isArray( key ) ) {
-				// If "name" is an array of keys...
+				// If "name" is an array of keys/static.
 				// When data is initially created, via ("key", "val") signature,
 				// keys will be converted to camelCase.
 				// Since there is no way to tell _how_ a key was added, remove
@@ -3539,7 +3539,7 @@ jQuery.fn.extend({
 				return;
 			}
 
-			// Set the data...
+			// Set the data/static.
 			this.each(function() {
 				// First, attempt to store a copy or reference of any
 				// data that might've been store with a camelCased key.
@@ -3547,10 +3547,10 @@ jQuery.fn.extend({
 
 				// For HTML5 data-* attribute interop, we have to
 				// store property names with dashes in a camelCase form.
-				// This might not apply to all properties...*
+				// This might not apply to all properties/static.*
 				data_user.set( this, camelKey, value );
 
-				// *... In the case of properties that might _actually_
+				// */static. In the case of properties that might _actually_
 				// have dashes, we need to also store a copy of that
 				// unchanged property.
 				if ( key.indexOf("-") !== -1 && data !== undefined ) {
@@ -5601,7 +5601,7 @@ jQuery.fn.extend({
 							!data_priv.access( node, "globalEval" ) && jQuery.contains( doc, node ) ) {
 
 							if ( node.src ) {
-								// Hope ajax is available...
+								// Hope ajax is available/static.
 								jQuery._evalUrl( node.src );
 							} else {
 								jQuery.globalEval( node.textContent.replace( rcleanScript, "" ) );

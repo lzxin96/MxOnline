@@ -1113,8 +1113,8 @@ msgstr "显示全部"
 #: .\templates\xadmin\includes\submit_line.html:10
 #: .\templates\xadmin\includes\submit_line.html:13
 #: .\templates\xadmin\views\form.html:30 .\templates\xadmin\views\form.html:31
-msgid "Saving.."
-msgstr "保存中.."
+msgid "Saving/static"
+msgstr "保存中/static"
 
 #: .\templates\xadmin\includes\submit_line.html:17
 msgid "Save as new"

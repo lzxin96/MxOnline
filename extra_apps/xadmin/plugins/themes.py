@@ -21,7 +21,7 @@ THEME_CACHE_KEY = 'xadmin_themes'
 class ThemePlugin(BaseAdminPlugin):
 
     enable_themes = False
-    # {'name': 'Blank Theme', 'description': '...', 'css': 'http://...', 'thumbnail': '...'}
+    # {'name': 'Blank Theme', 'description': '/static.', 'css': 'http:///static.', 'thumbnail': '/static.'}
     user_themes = None
     use_bootswatch = False
     default_theme = static('xadmin/css/themes/bootstrap-xadmin.css')

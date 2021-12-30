@@ -57,7 +57,7 @@ class ForeignKeySearchWidget(forms.Widget):
         try:
             obj = self.rel.to._default_manager.using(
                 self.db).get(**{key: value})
-            return '%s' % escape(Truncator(obj).words(14, truncate='...'))
+            return '%s' % escape(Truncator(obj).words(14, truncate='/static.'))
         except (ValueError, self.rel.to.DoesNotExist):
             return ""
 

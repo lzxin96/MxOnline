@@ -15,8 +15,8 @@ The plugin supports these options:
 It can also be applied to a single series, like this:
 
 	$.plot( $("#placeholder"), [{
-		data: [ ... ],
-		threshold: { ... }
+		data: [ /static. ],
+		threshold: { /static. }
 	}])
 
 An array can be passed for multiple thresholding, like this:

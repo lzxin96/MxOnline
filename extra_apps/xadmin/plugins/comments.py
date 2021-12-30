@@ -11,7 +11,7 @@ from django.contrib.comments.views.moderation import perform_flag, perform_appro
 
 class UsernameSearch(object):
     """The User object may not be auth.User, so we need to provide
-    a mechanism for issuing the equivalent of a .filter(user__username=...)
+    a mechanism for issuing the equivalent of a .filter(user__username=/static.)
     search in CommentAdmin.
     """
     def __str__(self):

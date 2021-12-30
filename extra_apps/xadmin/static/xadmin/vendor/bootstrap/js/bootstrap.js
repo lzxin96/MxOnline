@@ -195,7 +195,7 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
   }
 
   Button.DEFAULTS = {
-    loadingText: 'loading...'
+    loadingText: 'loading/static.'
   }
 
   Button.prototype.setState = function (state) {

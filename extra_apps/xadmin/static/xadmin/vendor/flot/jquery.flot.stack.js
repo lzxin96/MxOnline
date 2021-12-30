@@ -21,7 +21,7 @@ stack, you can set the stack option like this:
 You can also specify it for a single series, like this:
 
 	$.plot( $("#placeholder"), [{
-		data: [ ... ],
+		data: [ /static. ],
 		stack: true
 	}])
 

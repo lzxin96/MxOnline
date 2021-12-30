@@ -36,7 +36,7 @@ parameter with the ranges selected on the axes, like this:
 	placeholder.bind( "plotselected", function( event, ranges ) {
 		alert("You selected " + ranges.xaxis.from + " to " + ranges.xaxis.to)
 		// similar for yaxis - with multiple axes, the extra ones are in
-		// x2axis, x3axis, ...
+		// x2axis, x3axis, /static.
 	});
 
 The "plotselected" event is only fired when the user has finished making the
@@ -63,7 +63,7 @@ The plugin allso adds the following methods to the plot object:
   setSelection will trigger the "plotselected" event when called. If you don't
   want that to happen, e.g. if you're inside a "plotselected" handler, pass
   true as the second parameter. If you are using multiple axes, you can
-  specify the ranges on any of those, e.g. as x2axis/x3axis/... instead of
+  specify the ranges on any of those, e.g. as x2axis/x3axis//static. instead of
   xaxis, the plugin picks the first one it sees.
 
 - clearSelection( preventEvent )

@@ -696,11 +696,11 @@
 				if (new_month < 0 || new_month > 11)
 					new_month = (new_month + 12) % 12;
 			} else {
-				// For magnitudes >1, move one month at a time...
+				// For magnitudes >1, move one month at a time/static.
 				for (var i=0; i<mag; i++)
-					// ...which might decrease the day (eg, Jan 31 to Feb 28, etc)...
+					// /static.which might decrease the day (eg, Jan 31 to Feb 28, etc)/static.
 					new_date = this.moveMonth(new_date, dir);
-				// ...then reset the day, keeping it in the new month
+				// /static.then reset the day, keeping it in the new month
 				new_month = new_date.getUTCMonth();
 				new_date.setUTCDate(day);
 				test = function(){ return new_month != new_date.getUTCMonth(); };

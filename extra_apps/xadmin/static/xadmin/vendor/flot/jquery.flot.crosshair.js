@@ -23,7 +23,7 @@ The plugin also adds four public methods:
 
     Set the position of the crosshair. Note that this is cleared if the user
     moves the mouse. "pos" is in coordinates of the plot and should be on the
-    form { x: xpos, y: ypos } (you can use x2/x3/... if you're using multiple
+    form { x: xpos, y: ypos } (you can use x2/x3//static. if you're using multiple
     axes), which is coincidentally the same format as what you get from a
     "plothover" event. If "pos" is null, the crosshair is cleared.
 
@@ -39,7 +39,7 @@ The plugin also adds four public methods:
 
     Example usage:
 
-	var myFlot = $.plot( $("#graph"), ..., { crosshair: { mode: "x" } } };
+	var myFlot = $.plot( $("#graph"), /static., { crosshair: { mode: "x" } } };
 	$("#graph").bind( "plothover", function ( evt, position, item ) {
 		if ( item ) {
 			// Lock the crosshair to the data point being hovered
